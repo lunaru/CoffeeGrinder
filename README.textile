@@ -12,7 +12,7 @@ h2. Requirements
 
 h2. Installation
 
-Extract the source files into a directory in your PHP library path. 
+Extract the source files into a directory in your PHP library path. Make sure that you extract the default jcoffeescript JAR to your classpath if you intend to use the default command-line compiler.
 
 h3. Usage
 
