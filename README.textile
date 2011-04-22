@@ -1,6 +1,6 @@
 h1. Coffee Grinder
 
-CoffeeGrinder is a PHP compiler wrapper for "CoffeeScript":http://jashkenas.github.com/coffee-script/ compilers. It's useful to dynamically compiling CoffeeScript on the server-side before serving to a client (as opposed to manually compiling scripts).
+CoffeeGrinder is a PHP compiler wrapper for "CoffeeScript":http://jashkenas.github.com/coffee-script/ compilers. It's useful for dynamically compiling CoffeeScript on the server-side before serving to a client (as opposed to manually compiling scripts).
 
 CoffeeGrinder should be used as part of an existing asset packaging system and is provided for convenience for being part of a larger system. CoffeeGrinder is not an independent CoffeeScript compiler. By default CoffeeGrinder uses "jcoffeescript":https://github.com/yeungda/jcoffeescript, however, this can be replaced with any compiler that takes CoffeeScript on STDIN and produces compiled code on STDOUT.
 
