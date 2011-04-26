@@ -25,12 +25,16 @@ class CoffeeGrinder
 			fclose($pipes[0]);
 
 			$retval = stream_get_contents($pipes[1]);
+			$errorval = stream_get_contents($pipes[2]);
 
 			fclose($pipes[1]);
 			fclose($pipes[2]);
 
 			$proc_value = proc_close($process);
-			
+
+			if ($errorval != '')
+				throw new Exception($errorval);
+
 			return $retval;
 		}
 	}
